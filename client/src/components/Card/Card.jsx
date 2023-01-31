@@ -16,13 +16,16 @@ const Card = ({ item }) => {
             alt=""
             className="mainImg"
           />
+          {item?.attributes.img2.data !== null &&    //check if 2nd img is present to prevent null img display
           <img
-            src={
-              process.env.REACT_APP_UPLOAD_URL + item.attributes?.img2?.data?.attributes?.url
-            }
-            alt=""
-            className="secondImg"
-          />
+          src={
+            process.env.REACT_APP_UPLOAD_URL + item.attributes?.img2?.data?.attributes?.url
+          }
+          alt=""
+          className="secondImg"
+        />
+          }
+          
 
         </div>
         <h2>{item?.attributes.title}</h2>

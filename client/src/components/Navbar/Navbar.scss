@@ -16,6 +16,7 @@
     .left {
       display: flex;
       align-items: center;
+      margin-right: auto;
       gap: 25px;
     }
     .center {
@@ -25,6 +26,7 @@
     .right {
       display: flex;
       align-items: center;
+      margin-left: auto;
       gap: 25px;
 
       .icons {
